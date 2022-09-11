@@ -33,6 +33,8 @@ THEN the saved events persist
 
 ## Notes
 
+Found past project: read through as reference: https://github.com/ewirtz3/work-day-scheduler/blob/master/index.html
+
 You are required to submit the following for review:
 
 * The URL of the deployed application:
