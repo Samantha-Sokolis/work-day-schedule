@@ -31,16 +31,6 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-## Notes
-
-Found past project: read through as reference: https://github.com/ewirtz3/work-day-scheduler/blob/master/index.html
-
-https://www.w3schools.com/jsref/prop_win_localstorage.asp
-https://www.w3schools.com/tags/tag_time.asp
-
-You are required to submit the following for review:
-
-* The URL of the deployed application:
-
-* The URL of the GitHub repository:
+## image
+assets/Screen Shot_saves to local storage.png
 
