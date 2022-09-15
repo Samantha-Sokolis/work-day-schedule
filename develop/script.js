@@ -7,9 +7,8 @@ $("#currentDay").text(currentTime);
 // 3. When note is entered, Save button pressed- item saved in local storage
 // localStorage.setItem("9AM");
 function seeIfSaving(event){
-    // if(event.target.matches(".saveBtn"))
     if(event.target.className.includes("saveBtn")){
-       // alert("saving...")
+       // variables below - grandfather element to grandchild element)
        var row=event.target.closest(".row")
        var time=row.querySelector(".hour")
        var note=row.querySelector(".form-input")
@@ -22,9 +21,14 @@ var page = document.getElementById("wholePage");
 page.addEventListener("click", seeIfSaving)
 
 // TODO: Make this not repeatedly done for the other hours
-var textAt9AM = localStorage.getItem("9AM")
-if(textAt9AM) {
-    document.querySelector(".read-9am").value = textAt9AM
+var textAtHour = localStorage.getItem("9AM")
+if(textAtHour) {
+    document.querySelector(".hour-note9").value = textAtHour
+}
+//below applied but does not save that line to storage
+var textAtHour = localStorage.getItem("10AM")
+if(textAtHour) {
+    document.querySelector(".hour-note10").value = textAtHour
 }
 
 // function below saves form input on-click
@@ -33,7 +37,6 @@ function scheduleNote() {
 }
 
 
-// 4. Refresh page to ensure item has remained. 
 
 // 1. Schedule appears already colour coded - depending on time of day - past, present or future
 //var currentHour = moment().format("AH");
