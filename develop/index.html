@@ -22,7 +22,7 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body id="wholePage">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -31,11 +31,18 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <div class="row">
-          <div class="col-2 time-block hour">9AM</div>
-          <div class="col-8 textarea past present future"><input type="text" id="form-input" name="schedule-note" placeholder="Enter note" /></div>
-          <button class="col-2 saveBtn">SAVE</div>
+          <div class="col-2 time-block hour hour-9">9AM</div>
+          <div class="col-9 textarea past present future"><input type="text" class="form-input read-9am" name="schedule-note" placeholder="Enter note" /></div>
+          <button class="col-1 saveBtn"><i class="fas fa-save"></i></div>
+      <div class="row">
+              <div class="col-2 time-block hour">12PM</div>
+              <div class="col-9 textarea past present future"><input type="text" class="form-input" name="schedule-note" placeholder="Enter note" /></div>
+              <button class="col-1 saveBtn"><i class="fas fa-save"></i></div>
+      <div class="row">
+              <div class="col-2 time-block hour">5PM</div>
+              <div class="col-9 textarea past present future"><input type="text" class="form-input" name="schedule-note" placeholder="Enter note" /></div>
+              <button class="col-1 saveBtn"><i class="fas fa-save"></i></div>
     </div>
-
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
